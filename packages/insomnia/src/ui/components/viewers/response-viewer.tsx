@@ -283,7 +283,7 @@ export const ResponseViewer = ({
         body={getBodyAsString()}
         key={disableHtmlPreviewJs ? 'no-js' : 'yes-js'}
         url={url}
-        webpreferences={`disableDialogs=true, javascript=${disableHtmlPreviewJs ? 'no' : 'yes'}`}
+        disableHtmlPreviewJs={disableHtmlPreviewJs}
       />
     );
   }

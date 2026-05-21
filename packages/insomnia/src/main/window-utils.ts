@@ -201,7 +201,6 @@ export function createWindow(): ElectronBrowserWindow {
       zoomFactor: getZoomFactor(),
       nodeIntegration: true,
       nodeIntegrationInWorker: false, // must remain false to ensure the nunjucks web worker sandbox does not have access to Node.js APIs
-      webviewTag: true,
       // TODO: enable context isolation
       contextIsolation: false,
       disableBlinkFeatures: 'Auxclick',
